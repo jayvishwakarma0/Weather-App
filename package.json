@@ -20,7 +20,8 @@
     "@mui/material": "^5.15.15",
     "dotenv": "^16.4.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "webpack": "^5.93.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
