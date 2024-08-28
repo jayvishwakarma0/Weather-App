@@ -7,8 +7,8 @@ import React from "react"
 export default function SearchBox({updateInfo}){
     let [city, setCity] = useState("")
     let [error, setError] = useState(false)
-   const API_URL=process.env.REACT_APP_API_URL
-    const API_KEY=process.env.REACT_APP_API_KEY
+    const API_URL='http://api.openweathermap.org/data/2.5/weather'
+    const API_KEY='1031e82180981b48e6b9fba105594774'
 
 
     let getWeatherInfo = async ()=>{
