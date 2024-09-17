@@ -8,8 +8,10 @@ import.meta.env;
 export default function SearchBox({ updateInfo }) {
   let [city, setCity] = useState("");
   let [error, setError] = useState(false);
-  const API_URL = "REACT_APP_API_URL";
-  const API_KEY = "REACT_APP_API_KEY";
+  // const API_URL = "REACT_APP_API_URL";
+  // const API_KEY = "REACT_APP_API_KEY";
+  const API_URL = import.meta.env.VITE_API_URL;
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   let getWeatherInfo = async () => {
     try {
