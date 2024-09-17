@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.WeatherApp {
+    text-align: center;
+    background: linear-gradient(135deg, #87CEEB, #FFB6C1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Styling the main heading */
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    color: #303f9f;
+    padding: 2rem 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling the Card container */
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Media Query for Tablets (width up to 1024px) */
+  @media (max-width: 1024px) {
+    .WeatherApp {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .cardContainer {
+      width: 90%;
+    }
+  
+    .SearchBox form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Media Query for Mobile Devices (width up to 768px) */
+  @media (max-width: 768px) {
+    .WeatherApp {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .cardContainer {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .InfoBox {
+      margin-bottom: 15px;
+    }
+  
+    .SearchBox form {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .MuiTextField-root {
+      width: 100%;
+    }
+  
+    .MuiButton-root {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Media Query for Small Mobile Devices (width up to 480px) */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .MuiButton-root {
+      font-size: 0.9rem;
+    }
+  
+    .MuiCardContent-root {
+      font-size: 0.8rem;
+    }
+  
+    .InfoBox {
+      padding: 10px;
+    }
+  }
+  

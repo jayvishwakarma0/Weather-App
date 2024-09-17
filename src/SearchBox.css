@@ -1,3 +1,36 @@
-.SearchBox{
-    text-align: center;
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #303f9f;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+.SearchBox form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .MuiTextField-root {
+    min-width: 250px;
+  }
+  
+  .MuiButton-root {
+    background-color: #4573a4;
+    color: white;
+    padding: 8px 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .MuiTextField-root {
+      width: 100%;
+    }
+  
+    .MuiButton-root {
+      width: 100%;
+    }
+  }
+  

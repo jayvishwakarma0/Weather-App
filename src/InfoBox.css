@@ -1,8 +1,31 @@
-.InfoBox{
-    text-align: center;
-}
-
-.cardContainer{
+.InfoBox {
+    margin: 10px 0;
+  }
+  
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: #303f9f;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardContainer {
     display: flex;
     justify-content: center;
-}
+  }
+  
+  .cardContainer p{
+     margin-top: 5px;
+  } 
+
+  @media (max-width: 768px) {
+    .InfoBox {
+      margin: 10px 0;
+    }
+  
+    .cardContainer {
+      width: 100%;
+    }
+  }
+  
